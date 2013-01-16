@@ -1,15 +1,16 @@
 # Dell 5530 / Ericsson f3507g 3G Signal Monitor for Linux
 
-The code dell5530_mon.py, radio.py and current_bandwidth.sh are covered under a Creative Commons Attribute-Share Alike licence.  The SVG icons are taken from the /usr/share/icons/Human/scalable/status folder - not entirely sure what licence they are covered under.  They are unmodified and distributed in case the are not available on the users computer.  
+The code `dell5530_mon.py`, `radio.py` and `current_bandwidth.sh` are covered under a Creative Commons Attribute-Share Alike licence.  The SVG icons are taken from the /usr/share/icons/Human/scalable/status folder - not entirely sure what licence they are covered under.  They are unmodified and distributed in case the are not available on the users computer.  
 
 Usage:
 
-;dell5530_mon.py <SERIAL> <INSTALLLOCATION>
+    dell5530_mon.py <SERIAL> <INSTALLLOCATION>
 
 For example:
-;~/scripts/dell5530_mon/dell5530_mon.py /dev/ttyACM0 ~/scripts/dell5530_mon
 
-Will run the monitor using serial device at /dev/ttyACM0 and will use the icon folder in ~/scripts/dell5530_mon along with the shell script for bandwidth usage.  
+    ~/scripts/dell5530_mon/dell5530_mon.py /dev/ttyACM0 ~/scripts/dell5530_mon
+
+Will run the monitor using serial device at `/dev/ttyACM0` and will use the icon folder in `~/scripts/dell5530_mon` along with the shell script for bandwidth usage.  
 
 If you have vnstat installed and configured to monitor ppp0, then clicking on the status icon will display the current months bandwidth usage (download + upload) as a notification.  
 
@@ -23,9 +24,9 @@ Any suggestions for this program most welcome!
 
 Many of the AT commands used in this program have been sniffed out from monitoring the serial port in windows in between the modem and both Vodafone Mobile Connect and Ericsson's Connect Software.  
 
-Barry John Williams <barry@bjw.me.uk> http://www.bjw.me.uk/
+Barry John Williams 
+https://github.com/bazwilliams/dell5530mon
 
 Acknowledgements to:
-
 <arno@natisbad.org> http://www.natisbad.org/E4300/Dell_Wireless_5530_AT_cmd_ref.html
-Alexander (comments in http://www.bjw.me.uk/2009/03/dell-5530ericsson-f3507g-on-linux.html) for making current_bandwidth.sh locale independent
+Alexander (comments in http://blog.bjw.me.uk/2009/03/dell-5530ericsson-f3507g-on-linux.html) for making current_bandwidth.sh locale independent
