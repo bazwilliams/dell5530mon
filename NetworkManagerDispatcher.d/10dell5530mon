@@ -1,0 +1,18 @@
+#!/bin/sh
+
+IF=$1
+STATUS=$2
+PIDFILE=/tmp/dell5530_mon.pid
+
+if [ "$IF" = "usb0" ]; then
+
+	#Kill any running monitor 
+	kill `cat $PIDFILE`
+	rm $PIDFILE
+
+	if [ "$STATUS" = "up" ]; then
+		su barry -l -c DISPLAY=:0.0\ python\ /home/barry/Dropbox/scripts/dell5530_mon.py\ /dev/ttyACM2\ /home/barry/Dropbox/scripts &
+		PID=$!
+		echo $PID > $PIDFILE
+	fi
+fi
