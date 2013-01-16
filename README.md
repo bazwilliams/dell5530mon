@@ -1,14 +1,13 @@
-# Author: Barry John Williams
-# Creative Commons Attribute-Share Alike 2.5 UK:Scotland Licence
+# Dell 5530 / Ericsson f3507g 3G Signal Monitor for Linux
 
-The code dell5530_mon.py, radio.py and current_bandwidth.sh are covered under a Creative Commons Attribute-Share Alike licence.  The SVG icons are taken from the /usr/share/icons/Human/scalable/status folder - not entirely sure what licence they are covered under, probably GPL.  They are unmodified and distributed in case the are not available on the users computer.  
+The code dell5530_mon.py, radio.py and current_bandwidth.sh are covered under a Creative Commons Attribute-Share Alike licence.  The SVG icons are taken from the /usr/share/icons/Human/scalable/status folder - not entirely sure what licence they are covered under.  They are unmodified and distributed in case the are not available on the users computer.  
 
 Usage:
 
-dell5530_mon.py <SERIAL> <INSTALLLOCATION>
+;dell5530_mon.py <SERIAL> <INSTALLLOCATION>
 
 For example:
-~/scripts/dell5530_mon/dell5530_mon.py /dev/ttyACM0 ~/scripts/dell5530_mon
+;~/scripts/dell5530_mon/dell5530_mon.py /dev/ttyACM0 ~/scripts/dell5530_mon
 
 Will run the monitor using serial device at /dev/ttyACM0 and will use the icon folder in ~/scripts/dell5530_mon along with the shell script for bandwidth usage.  
 
