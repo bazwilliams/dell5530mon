@@ -20,6 +20,10 @@ The icon will automatically update depending on the signal strength and access t
 
 Right clicking the icon will open a context menu offering an ability to change the radio state from Normal (which prefers 3G), UMTS/HSPA which forces 3G only and GPRS which forces GPRS only connections.  The radio can also be switched off from the same menu.  
 
+Under `NetworkManagerDispatcher.d` is a configuration file to start the monitor whenever the connection is enabled via Network Manager (or at least used to with Ubuntu 9.10). 
+
+Under `prototypes` is some random scripts which may be useful, for example enabling the GPS chip, starting the connection via a wvdial script or toggling the radio. These are not used within the main application, but relevant. 
+
 Any suggestions for this program most welcome!  
 
 Many of the AT commands used in this program have been sniffed out from monitoring the serial port in windows in between the modem and both Vodafone Mobile Connect and Ericsson's Connect Software.  
